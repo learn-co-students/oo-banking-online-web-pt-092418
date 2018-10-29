@@ -9,13 +9,12 @@ class Transfer
     @amount = amount
   end
 
-  def valid 
-
-  
+  def valid? 
+    sender.status == "open" && receiver.status == "open"
   end
 
   def execute_transaction
-  
+    
   end
 
   def reverse_transfer
