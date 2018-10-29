@@ -17,6 +17,7 @@ attr_reader :name
   end
 
   def valid
+    self.valid?
   end
 
   def close_account
